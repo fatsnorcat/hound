@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with Project H.O.U.N.D.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is fully deployed on [Vercel](https://projecthound.vercel.app).
 
 ## Available Scripts
 
