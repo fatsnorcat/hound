@@ -7,7 +7,7 @@ const { test, loginUser, getProfile } = require('../controllers/authController')
 router.use(
     cors({
         credentials: true,
-        origin: process.env.FRONTEND_URL,
+        origin: 'http://localhost:3000',
     })
 )
 router.get('/', test)
