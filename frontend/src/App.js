@@ -6,7 +6,7 @@ import axios from 'axios'
 import { Toaster } from 'react-hot-toast'
 import { UserContextProvider, useUserContext } from "./context/userContext"
 
-axios.defaults.baseURL = 'http://localhost:8000'
+axios.defaults.baseURL = process.env.REACT_APP_API_URL
 axios.defaults.withCredentials = true
 
 // Protected Route
