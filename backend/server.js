@@ -15,8 +15,9 @@ app.use(cookieParser())
 app.use(express.urlencoded({extended: false}))
 
 app.use('/', require('./routes/authRoutes'))
+app.use('/', require('./routes/eventRoutes'))
 
-const port = process.env.PORT
+const port = process.env.PORT || 3000
 const server = app.listen(port, () => {
     console.log('Server is running on port ${port}')
 })

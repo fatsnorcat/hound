@@ -3,7 +3,6 @@ const router = express.Router()
 const cors = require('cors')
 const { test, loginUser, getProfile } = require('../controllers/authController')
 
-
 router.use(
     cors({
         credentials: true,
