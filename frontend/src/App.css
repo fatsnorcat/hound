@@ -285,7 +285,7 @@ html, body, #root {
 
 table {
   border-collapse: collapse;
-  width: 45%;
+  width: 85%;
 }
 
 td {
@@ -301,4 +301,3 @@ td:hover {
   background-color: #61dafb;
 }
 
-/*About*/
