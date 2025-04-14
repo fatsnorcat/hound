@@ -41,7 +41,6 @@ export default function Dashboard() {
       : new Date(b.timestamp) - new Date(a.timestamp)
   );
 
-  // Timeline-specific filter
   const filteredEventsForTimeline = events.filter((event) => {
     const currentTime = Date.now();
     if (timeRange === 'ALL') return true;
@@ -173,6 +172,9 @@ export default function Dashboard() {
             {/* === Event Timeline === */}
             <div style={{ flex: 1 }}>
               <h3>Event Timeline</h3>
+
+              {/* Data count */}
+              <p>Data Shown: {filteredEventsForTimeline.length}</p>
 
               <div style={{ marginBottom: '1rem' }}>
                 <label>Time Range: </label>
