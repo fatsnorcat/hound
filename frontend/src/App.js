@@ -1,6 +1,7 @@
 import "./App.css";
 import Login from './Components/Login';
 import Dashboard from './Components/Dashboard';
+import EventDetails from './Components/EventDetails'; // Import the EventDetails component
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import axios from 'axios';
 import { Toaster } from 'react-hot-toast';
@@ -33,6 +34,10 @@ function App() {
               <Route
                 path='/dashboard'
                 element={<ProtectedRoute element={<Dashboard />} />}
+              />
+              <Route
+                path='/eventdetails/:id' // The dynamic route for event details
+                element={<ProtectedRoute element={<EventDetails />} />} // Protect this route as well
               />
             </Routes>
           </BrowserRouter>

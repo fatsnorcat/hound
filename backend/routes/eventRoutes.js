@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-const { test, getRecentEvents } = require("../controllers/eventController");
+const { test, getEvents, getEventById } = require("../controllers/eventController");
 
 router.use(
   cors({
@@ -11,6 +11,7 @@ router.use(
 );
 
 router.get("/", test);
-router.get("/events", getRecentEvents);
+router.get("/events", getEvents);
+router.get('/events/:id', getEventById);
 
 module.exports = router;
